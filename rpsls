@@ -63,7 +63,7 @@ player_choice_name=input()  #用户通过键盘将自己的游戏选择对象输
 print("----------------")  #输出"-------- "进行分割。
 
 
-if player_choice_name  in ("石头,剪刀,布,蜥蜴,史波克"):    
+if player_choice_name  in ("石头,剪刀,纸,蜥蜴,史波克"):    
 	player_choice_number=name_to_number(player_choice_name) #调用name_to_number()函数将用户的游戏选择对象转换为相应的整数，存入变量player_choice_number。
 	comp_name=number_to_name(comp_number) #调用number_to_name()函数将计算机产生的随机数转换为对应的游戏对象。            
 
@@ -71,4 +71,4 @@ if player_choice_name  in ("石头,剪刀,布,蜥蜴,史波克"):
 	print("计算机的选择为：%s"%comp_name)  #显示计算机的选择。  
 	print(rpsls(player_choice_number,comp_number)) #显示根据RPSLS规则的判断结果。   
 else:
-		print("Error: No Correct Name")#如果用户的选择不是石头/剪刀/布/蜥蜴/史波克中的任意一个，则输出“Error: No Correct Name”。              
+		print("Error: No Correct Name")#如果用户的选择不是石头/剪刀/纸/蜥蜴/史波克中的任意一个，则输出“Error: No Correct Name”。              
